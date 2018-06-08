@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="json" location="25,165" size="315,315">
+    <action name="account_*" location="100,232" size="150,41">
+      <result name="success" />
+    </action>
+  </package>
+  <webResource name="index.jsp" path="/index.jsp" location="395,220" size="150,55" />
+  <webResource name="login.jsp" path="/login.jsp" location="10,10" size="150,55" />
+</Struts2Diagram>
+
