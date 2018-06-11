@@ -85,7 +85,7 @@ public class WorkUtil {
 			obj.put("desc", "该账号是首次登录，请先设置密码!");
 			return obj;
 		}
-		if(!dev.getDevKey().equals(pwdEncrypt(devKey))){
+		if(!dev.getDevKey().equals(devKey)){
 			obj.put("code", 4);
 			obj.put("desc", "设备密码错误!");
 			return obj;

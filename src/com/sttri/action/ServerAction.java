@@ -1434,10 +1434,10 @@ public class ServerAction extends BaseAction {
 			JSONObject ob = new JSONObject();
 			ob.put("code", 1);
 			ob.put("desc", "修改失败!");
-			List<TblDev> dList = this.devService.getResultList(" o.devNo=? and o.devKey=?", null, new Object[]{devNo,WorkUtil.pwdEncrypt(oldPwd)});
+			List<TblDev> dList = this.devService.getResultList(" o.devNo=? and o.devKey=?", null, new Object[]{devNo,oldPwd});
 			if(dList != null && dList.size() > 0){
 				TblDev dev = dList.get(0);
-				dev.setDevKey(WorkUtil.pwdEncrypt(newPwd));
+				dev.setDevKey(newPwd);
 				dev.setModifyPwdTime(Util.dateToStr(new Date()));
 				this.devService.update(dev);
 				ob.put("code", 0);
@@ -1594,10 +1594,10 @@ public class ServerAction extends BaseAction {
 			JSONObject ob = new JSONObject();
 			ob.put("code", 1);
 			ob.put("desc", "修改失败!");
-			List<TblUser> uList = this.userService.getResultList(" o.account=? and o.pwd=?", null, new Object[]{account,WorkUtil.pwdEncrypt(oldPwd)});
+			List<TblUser> uList = this.userService.getResultList(" o.account=? and o.pwd=?", null, new Object[]{account,oldPwd});
 			if(uList != null && uList.size() > 0){
 				TblUser user = uList.get(0);
-				user.setPwd(WorkUtil.pwdEncrypt(newPwd));
+				user.setPwd(newPwd);
 				user.setModifyPwdTime(Util.dateToStr(new Date()));
 				this.userService.update(user);
 				ob.put("code", 0);
@@ -1907,7 +1907,7 @@ public class ServerAction extends BaseAction {
 				List<TblDev> devs = this.devService.getResultList(" o.devNo=?", null, new Object[]{account});
 				if (devs != null && devs.size()>0) {
 					TblDev dev = devs.get(0);
-					dev.setDevKey(WorkUtil.pwdEncrypt(password));
+					dev.setDevKey(password);
 					dev.setModifyPwdTime(Util.dateToStr(new Date()));
 					dev.setEditTime(Util.dateToStr(new Date()));
 					this.devService.update(dev);
@@ -1919,7 +1919,7 @@ public class ServerAction extends BaseAction {
 				List<TblUser> users = this.userService.getResultList(" o.account=?", null, new Object[]{account});
 				if (users != null && users.size() >0) {
 					TblUser user = users.get(0);
-					user.setPwd(WorkUtil.pwdEncrypt(password));
+					user.setPwd(password);
 					user.setModifyPwdTime(Util.dateToStr(new Date()));
 					user.setEditTime(Util.dateToStr(new Date()));
 					this.userService.update(user);
