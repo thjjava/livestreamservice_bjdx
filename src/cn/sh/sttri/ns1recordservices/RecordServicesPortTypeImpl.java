@@ -89,6 +89,7 @@ public class RecordServicesPortTypeImpl implements RecordServicesPortType {
         	devRecordFileService.save(drf);
             cn.sh.sttri.ns1recordservices.DevRecordUpRes _return = new DevRecordUpRes();
             _return.setResult(0);
+            saveDevLog(dr.getDev(), 6, "录像上传成功");
             return _return;
         } catch (java.lang.Exception ex) {
             ex.printStackTrace();

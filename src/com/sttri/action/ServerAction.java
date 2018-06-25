@@ -864,6 +864,7 @@ public class ServerAction extends BaseAction {
 					devRecordFileService.deletebyids(ids.split(","));
 					obj.put("code", 0);
 					obj.put("desc", "删除成功!");
+					saveUserLog(user,account+"删除录像文件成功");
 				}
 			}
 		}else {
@@ -1937,5 +1938,25 @@ public class ServerAction extends BaseAction {
 		}
 	}
 	
+	/**
+	 * 根据账号和密码获取该账号的直播地址 onLine 0-在线 1-离线
+	 */
+	public void getDevPlayUrl(){
+		LOG.info("Executing operation getUrl1");
+		response.setCharacterEncoding("UTF-8");
+		String devNo = Util.dealNull(request.getParameter("devNo"));
+		String devKey = Util.dealNull(request.getParameter("devKey"));
+		JSONObject obj = WorkUtil.checkDev(devService, devNo, devKey);
+		obj.put("url", "");
+		if(obj.optInt("code", -2)!=0){
+			JsonUtil.jsonString(response, obj.toString());
+			return;
+		}
+		TblDev dev = (TblDev) JSONObject.toBean(obj.optJSONObject("dev"), TblDev.class);
+		obj.remove("dev");
+		obj.put("url", Util.dealNull(dev.getPublishUrl()));
+		obj.put("onLine", dev.getOnLines());
+		JsonUtil.jsonString(response, obj.toString());
+	}
 	/*-------------------------------北京项目部分方法结束-----------------------------------------*/
 }
