@@ -1435,6 +1435,12 @@ public class ServerAction extends BaseAction {
 			JSONObject ob = new JSONObject();
 			ob.put("code", 1);
 			ob.put("desc", "修改失败!");
+			if (!Util.isNormalPwd(newPwd)) {
+				ob.put("code", 9);
+				ob.put("desc", "密码必须满足大写字母，小写字母，数字，特殊符号四选三!");
+				JsonUtil.jsonString(response, ob.toString());
+				return ;
+			}
 			List<TblDev> dList = this.devService.getResultList(" o.devNo=? and o.devKey=?", null, new Object[]{devNo,oldPwd});
 			if(dList != null && dList.size() > 0){
 				TblDev dev = dList.get(0);
@@ -1595,6 +1601,12 @@ public class ServerAction extends BaseAction {
 			JSONObject ob = new JSONObject();
 			ob.put("code", 1);
 			ob.put("desc", "修改失败!");
+			if (!Util.isNormalPwd(newPwd)) {
+				ob.put("code", 9);
+				ob.put("desc", "密码必须满足大写字母，小写字母，数字，特殊符号四选三!");
+				JsonUtil.jsonString(response, ob.toString());
+				return ;
+			}
 			List<TblUser> uList = this.userService.getResultList(" o.account=? and o.pwd=?", null, new Object[]{account,oldPwd});
 			if(uList != null && uList.size() > 0){
 				TblUser user = uList.get(0);
@@ -1904,6 +1916,12 @@ public class ServerAction extends BaseAction {
 			JSONObject obj = new JSONObject();
 			obj.put("code", 0);
 			obj.put("desc", "设置成功!");
+			if (!Util.isNormalPwd(password)) {
+				obj.put("code", 9);
+				obj.put("desc", "密码必须满足大写字母，小写字母，数字，特殊符号四选三!");
+				JsonUtil.jsonString(response, obj.toString());
+				return ;
+			}
 			if ("0".equals(type)) {
 				List<TblDev> devs = this.devService.getResultList(" o.devNo=?", null, new Object[]{account});
 				if (devs != null && devs.size()>0) {

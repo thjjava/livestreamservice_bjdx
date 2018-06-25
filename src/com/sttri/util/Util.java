@@ -1730,6 +1730,19 @@ public class Util implements java.io.Serializable {
         Matcher m = p.matcher(str);
         return m.find();
     }
+    
+	/**
+	 * 密码含有大小写字母，数字，特殊字符，限制长度
+	 * @param pwd
+	 * @return
+	 */
+	public static boolean isNormalPwd(String pwd){
+//		String re = "^(?:(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[^A-Za-z0-9])).{8,20}$";
+		//大写字母，小写字母，数字，特殊符号必须四选三
+		String re = "^(?![a-zA-Z]+$)(?![A-Z0-9]+$)(?![A-Z\\W_]+$)(?![a-z0-9]+$)(?![a-z\\W_]+$)(?![0-9\\W_]+$)[a-zA-Z0-9\\W_]{8,}$";
+		return pwd.matches(re);
+	}
+	
 	public static void main(String[] args) throws ParseException {
 		System.out.println(nextInt(10000, 60000));
 		System.out.println(getGMTTime("GMT+8"));
