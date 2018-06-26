@@ -202,7 +202,7 @@ public class ServerAction extends BaseAction {
 					}
 				}
 			}
-			JsonUtil.jsonBeanToString(response, obj);
+			JsonUtil.jsonString(response, obj.toString());
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
@@ -835,7 +835,7 @@ public class ServerAction extends BaseAction {
 	 * pc删除录像
 	 * @return
 	 */
-	public String removeRecord(){
+	public void removeRecord(){
 		LOG.info("Executing operation removeRecord");
 		response.setCharacterEncoding("UTF-8");
 		String account = Util.dealNull(request.getParameter("account"));
@@ -843,7 +843,7 @@ public class ServerAction extends BaseAction {
 		JSONObject obj = WorkUtil.checkUser(userService, account, pwd);
 		if(obj.optInt("code", -2)!=0){
 			JsonUtil.jsonString(response, obj.toString());
-			return null;
+			return;
 		}
 		//获取该用户的权限
 		TblUser user = (TblUser) JSONObject.toBean(obj.optJSONObject("user"), TblUser.class);
@@ -853,9 +853,10 @@ public class ServerAction extends BaseAction {
 		if(ids.isEmpty()){
 			obj.put("desc", "请选择要删除的录像!");
 			JsonUtil.jsonString(response, obj.toString());
-			return null;
+			return;
 		}
 		String userId = user.getId();
+		String logDesc = account+"录像删除成功";;
 		List<UserRole> uRoles = this.userRoleService.getResultList(" o.user.id=?", null, new Object[]{userId});
 		if (uRoles != null && uRoles.size()>0) {
 			List<RoleMenus> roleMenus = this.roleMenusService.getResultList(" o.role.id=?", null, new Object[]{uRoles.get(0).getRole().getId()});
@@ -864,15 +865,15 @@ public class ServerAction extends BaseAction {
 					devRecordFileService.deletebyids(ids.split(","));
 					obj.put("code", 0);
 					obj.put("desc", "删除成功!");
-					saveUserLog(user,account+"删除录像文件成功");
 				}
 			}
 		}else {
 			obj.put("code", 5);
 			obj.put("desc", "该用户没有删除权限，删除失败!");
+			logDesc = account+"该用户没有删除权限，删除失败!";
 		}
+		saveUserLog(user,logDesc);
 		JsonUtil.jsonString(response, obj.toString());
-		return null;
 	}
 	
 	/**
