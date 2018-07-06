@@ -1751,6 +1751,7 @@ public class Util implements java.io.Serializable {
 		System.out.println(isSpecialChar("/9z/q2hpQz228esVn7pGNg"));
 		
 		System.out.println(datediff("2017-01-16 16:25:15", "2018-01-16 16:25:16", "yyyy-MM-dd HH:mm:ss")/(1000*3600*24));
+		System.out.println(isNormalPwd("111111Aa"));
 	}
 }
 	

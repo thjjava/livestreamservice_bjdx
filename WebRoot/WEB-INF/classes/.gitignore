@@ -1,9 +1,1 @@
-/.struts.mex
-/applicationContext-beans.xml
-/applicationContext-jdbc.xml
-/cn/
 /com/
-/constants.properties
-/jdbc.properties
-/log4j.properties
-/struts.xml
