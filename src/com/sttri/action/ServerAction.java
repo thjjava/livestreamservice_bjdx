@@ -22,6 +22,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 
+
+
+
+
 import com.sttri.pojo.CompanyGroup;
 import com.sttri.pojo.DevComment;
 import com.sttri.pojo.DevGood;
@@ -31,6 +35,7 @@ import com.sttri.pojo.DevRecordFile;
 import com.sttri.pojo.DevView;
 import com.sttri.pojo.MediaServer;
 import com.sttri.pojo.RoleMenus;
+import com.sttri.pojo.SensitiveWord;
 import com.sttri.pojo.TblBlack;
 import com.sttri.pojo.TblControl;
 import com.sttri.pojo.TblDev;
@@ -54,6 +59,7 @@ import com.sttri.service.IMediaServerService;
 import com.sttri.service.IMobileService;
 import com.sttri.service.IProblemService;
 import com.sttri.service.IRoleMenusService;
+import com.sttri.service.ISensitiveWordService;
 import com.sttri.service.ITblIPService;
 import com.sttri.service.IUserGroupService;
 import com.sttri.service.IUserPollingService;
@@ -63,6 +69,8 @@ import com.sttri.thread.IPAddressThread;
 import com.sttri.util.Base64Util;
 import com.sttri.util.Constant;
 import com.sttri.util.JsonUtil;
+import com.sttri.util.MD5Util;
+import com.sttri.util.SensitiveWordUtil;
 import com.sttri.util.Util;
 import com.sttri.util.WorkUtil;
 
@@ -109,6 +117,8 @@ public class ServerAction extends BaseAction {
 	private IDevCommentService devCommentService;
 	@Autowired
 	private IBlackService blackService;
+	@Autowired
+	private ISensitiveWordService sensitiveWordService;
 	
 	/**
 	 * pc客户端
@@ -249,6 +259,9 @@ public class ServerAction extends BaseAction {
 					logDesc = dev.getDevNo()+",登录失败,该账号已登录!";
 				}else {
 					String modifyPwdTime = dev.getModifyPwdTime();
+					if ("".equals(modifyPwdTime)) {
+						modifyPwdTime = dev.getAddTime();
+					}
 					int daysOfTwo = Long.valueOf(Util.datediff(modifyPwdTime, Util.dateToStr(new Date()), "yyyy-MM-dd HH:mm:ss")/(1000*3600*24)).intValue();
 					if (daysOfTwo >= 90) {
 						expiredFlag = "1";//提示客户端需要修改密码了
@@ -1602,12 +1615,12 @@ public class ServerAction extends BaseAction {
 			JSONObject ob = new JSONObject();
 			ob.put("code", 1);
 			ob.put("desc", "修改失败!");
-			if (!Util.isNormalPwd(newPwd)) {
+			/*if (!Util.isNormalPwd(newPwd)) {
 				ob.put("code", 9);
 				ob.put("desc", "密码必须满足大写字母，小写字母，数字，特殊符号四选三!");
 				JsonUtil.jsonString(response, ob.toString());
 				return ;
-			}
+			}*/
 			List<TblUser> uList = this.userService.getResultList(" o.account=? and o.pwd=?", null, new Object[]{account,oldPwd});
 			if(uList != null && uList.size() > 0){
 				TblUser user = uList.get(0);
@@ -1783,12 +1796,14 @@ public class ServerAction extends BaseAction {
 				JsonUtil.jsonString(response, obj.toString());
 				return;
 			}
+			List<SensitiveWord> swList = this.sensitiveWordService.getResultList(" 1=1", null);
 			List<TblBlack> blacks = this.blackService.getResultList(" o.user.id=?", null, new Object[]{user.getId()});
 			DevComment devComment = new DevComment();
 			devComment.setUserId(user.getId());
 			devComment.setDevId(devId);
 			devComment.setId(Util.getUUID(6));
-			devComment.setContent(content);
+			devComment.setRealContent(content);
+			devComment.setContent(SensitiveWordUtil.replaceSensitiveWord(content, 2, "*", swList));
 			devComment.setCommentTime(Util.dateToStr(new Date()));
 			devComment.setClientIP(clientIP);
 			if (blacks != null && blacks.size() >0) {
@@ -1913,16 +1928,17 @@ public class ServerAction extends BaseAction {
 		String account = Util.dealNull(request.getParameter("account"));
 		String password = Util.dealNull(request.getParameter("password"));
 		String type = Util.dealNull(request.getParameter("type"));
+		String code = Util.dealNull(request.getParameter("code"));
 		try {
 			JSONObject obj = new JSONObject();
 			obj.put("code", 0);
 			obj.put("desc", "设置成功!");
-			/*if (!Util.isNormalPwd(password)) {
+			if (!code.equals(MD5Util.MD5Code(account+password))) {
 				obj.put("code", 9);
-				obj.put("desc", "密码必须满足大写字母，小写字母，数字，特殊符号四选三!");
+				obj.put("desc", "账号和验证码验证不正确，请重新设置密码!");
 				JsonUtil.jsonString(response, obj.toString());
 				return ;
-			}*/
+			}
 			if ("0".equals(type)) {
 				List<TblDev> devs = this.devService.getResultList(" o.devNo=?", null, new Object[]{account});
 				if (devs != null && devs.size()>0) {

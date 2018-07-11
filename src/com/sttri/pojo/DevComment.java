@@ -10,7 +10,7 @@ import org.hibernate.annotations.Formula;
 
 
 /**
- * ÓÃ»§µãÔÞ
+ * ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 @Entity
 @Table(name = "dev_comment")
@@ -27,6 +27,7 @@ public class DevComment implements java.io.Serializable {
 	private String content;
 	private String commentTime;
 	private String account;
+	private String realContent;
 	
 	public DevComment() {
 	}
@@ -123,6 +124,15 @@ public class DevComment implements java.io.Serializable {
 
 	public void setAccount(String account) {
 		this.account = account;
+	}
+	
+	@Column(name = "RealContent", length = 4000)
+	public String getRealContent() {
+		return realContent;
+	}
+
+	public void setRealContent(String realContent) {
+		this.realContent = realContent;
 	}
 
 }
