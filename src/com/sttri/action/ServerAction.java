@@ -7,6 +7,7 @@ import java.util.Date;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.logging.Logger;
+import java.util.stream.Collectors;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -20,6 +21,7 @@ import org.dom4j.Element;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+
 
 
 
@@ -1796,14 +1798,14 @@ public class ServerAction extends BaseAction {
 				JsonUtil.jsonString(response, obj.toString());
 				return;
 			}
-			List<SensitiveWord> swList = this.sensitiveWordService.getResultList(" 1=1", null);
+			List<String> sList = getSensitiveWords();
 			List<TblBlack> blacks = this.blackService.getResultList(" o.user.id=?", null, new Object[]{user.getId()});
 			DevComment devComment = new DevComment();
 			devComment.setUserId(user.getId());
 			devComment.setDevId(devId);
 			devComment.setId(Util.getUUID(6));
 			devComment.setRealContent(content);
-			devComment.setContent(SensitiveWordUtil.replaceSensitiveWord(content, 2, "*", swList));
+			devComment.setContent(SensitiveWordUtil.replaceSensitiveWord(content, 2, "*", sList));
 			devComment.setCommentTime(Util.dateToStr(new Date()));
 			devComment.setClientIP(clientIP);
 			if (blacks != null && blacks.size() >0) {
@@ -1821,6 +1823,18 @@ public class ServerAction extends BaseAction {
 		}
 	}
 	
+	public List<String> getSensitiveWords(){
+		List<String> sList = new ArrayList<String>();
+		try {
+			List<SensitiveWord> swList = this.sensitiveWordService.getResultList(" 1=1", null);
+			//使用jdk8stream流，获取只含有敏感词的list
+			sList = swList.stream().map(s->s.getSensitiveWord()).collect(Collectors.toList());
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		return sList;
+	}
 	/**
 	 * 删除评论
 	 */

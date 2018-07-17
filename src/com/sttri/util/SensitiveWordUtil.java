@@ -2,12 +2,16 @@ package com.sttri.util;
 
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.stream.Collectors;
+
+import com.sttri.pojo.SensitiveWord;
 
 @SuppressWarnings("rawtypes")
 public class SensitiveWordUtil {
@@ -143,15 +147,31 @@ public class SensitiveWordUtil {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		List<String> list = new ArrayList<>();
+		List<SensitiveWord> list = new ArrayList<>();
+		SensitiveWord s1 = new SensitiveWord();
+		s1.setId("1");
+		s1.setSensitiveWord("三级片");
+		s1.setAddTime(Util.dateToStr(new Date()));
+		list.add(s1);
+		SensitiveWord s2 = new SensitiveWord();
+		s2.setId("11");
+		s2.setSensitiveWord("金正恩");
+		s2.setAddTime(Util.dateToStr(new Date()));
+		list.add(s2);
+		SensitiveWord s3 = new SensitiveWord();
+		s3.setId("111");
+		s3.setSensitiveWord("习近平");
+		s3.setAddTime(Util.dateToStr(new Date()));
+		list.add(s3);
 		/*list.add("三级片");
 		list.add("法轮功");
 		list.add("习近平");
 		list.add("金正恩");*/
-		
+		List<String> sList = new ArrayList<>();
+		sList = list.stream().map(s->s.getSensitiveWord()).collect(Collectors.toList());
 		String str = "据说这是一个测试三级片敏感词的语句库，其中含有金正恩这个最牛80后，与习近平见了几次面，谈了几次话的名字";
 		System.out.println("oldStr:"+str);
-		String newStr = replaceSensitiveWord(str, 2, "*",list);
+		String newStr = replaceSensitiveWord(str, 2, "*",sList);
 		System.out.println("newStr:"+newStr);
 	}
 
