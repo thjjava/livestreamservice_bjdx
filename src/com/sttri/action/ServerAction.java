@@ -7,7 +7,6 @@ import java.util.Date;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.logging.Logger;
-import java.util.stream.Collectors;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -21,6 +20,7 @@ import org.dom4j.Element;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+
 
 
 
@@ -120,7 +120,7 @@ public class ServerAction extends BaseAction {
 	@Autowired
 	private IBlackService blackService;
 	@Autowired
-	private ISensitiveWordService sensitiveWordService;
+	private ISensitiveWordService wordService;
 	
 	/**
 	 * pc客户端
@@ -1826,15 +1826,19 @@ public class ServerAction extends BaseAction {
 	public List<String> getSensitiveWords(){
 		List<String> sList = new ArrayList<String>();
 		try {
-			List<SensitiveWord> swList = this.sensitiveWordService.getResultList(" 1=1", null);
+			List<SensitiveWord> swList = this.wordService.getResultList(" 1=1", null);
+			for (SensitiveWord word : swList) {
+				sList.add(word.getSensitiveWord());
+			}
 			//使用jdk8stream流，获取只含有敏感词的list
-			sList = swList.stream().map(s->s.getSensitiveWord()).collect(Collectors.toList());
+//			sList = swList.stream().map(s -> s.getSensitiveWord()).collect(Collectors.toList());
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
 		}
 		return sList;
 	}
+	
 	/**
 	 * 删除评论
 	 */
