@@ -1,12 +1,12 @@
-[INFO ] 2018-07-17 15:03:02,714  0    [org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:304)] method:Root WebApplicationContext: initialization started
-[INFO ] 2018-07-17 15:03:02,796  82   [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:583)] method:Refreshing Root WebApplicationContext: startup date [Tue Jul 17 15:03:02 CST 2018]; root of context hierarchy
-[INFO ] 2018-07-17 15:03:02,894  180  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [applicationContext-jdbc.xml]
-[INFO ] 2018-07-17 15:03:03,329  615  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [applicationContext-beans.xml]
-[INFO ] 2018-07-17 15:03:03,393  679  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
-[INFO ] 2018-07-17 15:03:05,045  2331 [com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:638)] method:{dataSource-1} inited
-[INFO ] 2018-07-17 15:03:05,589  2875 [org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:715)] method:Building new Hibernate SessionFactory
-[INFO ] 2018-07-17 15:03:06,097  3383 [org.springframework.orm.hibernate3.HibernateTransactionManager.afterPropertiesSet(HibernateTransactionManager.java:420)] method:Using DataSource [{
-	CreateTime:"2018-07-17 15:03:04",
+[INFO ] 2018-07-18 14:31:46,925  0    [org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:304)] method:Root WebApplicationContext: initialization started
+[INFO ] 2018-07-18 14:31:47,212  287  [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:583)] method:Refreshing Root WebApplicationContext: startup date [Wed Jul 18 14:31:47 CST 2018]; root of context hierarchy
+[INFO ] 2018-07-18 14:31:47,270  345  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [applicationContext-jdbc.xml]
+[INFO ] 2018-07-18 14:31:48,368  1443 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [applicationContext-beans.xml]
+[INFO ] 2018-07-18 14:31:48,441  1516 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+[INFO ] 2018-07-18 14:31:49,510  2585 [com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:638)] method:{dataSource-1} inited
+[INFO ] 2018-07-18 14:31:50,042  3117 [org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:715)] method:Building new Hibernate SessionFactory
+[INFO ] 2018-07-18 14:31:50,597  3672 [org.springframework.orm.hibernate3.HibernateTransactionManager.afterPropertiesSet(HibernateTransactionManager.java:420)] method:Using DataSource [{
+	CreateTime:"2018-07-18 14:31:49",
 	ActiveCount:0,
 	PoolingCount:1,
 	CreateCount:1,
@@ -14,7 +14,7 @@
 	CloseCount:1,
 	ConnectCount:1,
 	Connections:[
-		{ID:1691858720, ConnectTime:"2018-07-17 15:03:05", UseCount:1, LastActiveTime:"2018-07-17 15:03:05"}
+		{ID:1691858720, ConnectTime:"2018-07-18 14:31:49", UseCount:1, LastActiveTime:"2018-07-18 14:31:50"}
 	]
 }
 
@@ -25,56 +25,162 @@
 		]
 	}
 ]] of Hibernate SessionFactory for HibernateTransactionManager
-[INFO ] 2018-07-17 15:03:07,177  4463 [org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:344)] method:Root WebApplicationContext: initialization completed in 4460 ms
-[INFO ] 2018-07-17 15:03:07,419  4705 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts-default.xml]
-[INFO ] 2018-07-17 15:03:07,540  4826 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts-plugin.xml]
-[INFO ] 2018-07-17 15:03:07,571  4857 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts.xml]
-[INFO ] 2018-07-17 15:03:07,581  4867 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
-[INFO ] 2018-07-17 15:03:07,581  4867 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
-[INFO ] 2018-07-17 15:03:07,582  4868 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
-[INFO ] 2018-07-17 15:03:07,590  4876 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
-[INFO ] 2018-07-17 15:03:07,591  4877 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
-[INFO ] 2018-07-17 15:03:07,592  4878 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
-[INFO ] 2018-07-17 15:03:07,592  4878 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
-[INFO ] 2018-07-17 15:03:07,592  4878 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
-[INFO ] 2018-07-17 15:03:07,592  4878 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
-[INFO ] 2018-07-17 15:03:07,593  4879 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
-[INFO ] 2018-07-17 15:03:07,593  4879 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
-[INFO ] 2018-07-17 15:03:07,593  4879 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
-[INFO ] 2018-07-17 15:03:07,599  4885 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
-[INFO ] 2018-07-17 15:03:07,601  4887 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
-[INFO ] 2018-07-17 15:03:07,601  4887 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
-[INFO ] 2018-07-17 15:03:07,602  4888 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
-[INFO ] 2018-07-17 15:03:07,602  4888 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
-[INFO ] 2018-07-17 15:03:07,605  4891 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
-[INFO ] 2018-07-17 15:03:07,607  4893 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
-[INFO ] 2018-07-17 15:03:07,608  4894 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
-[INFO ] 2018-07-17 15:03:07,608  4894 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
-[INFO ] 2018-07-17 15:03:07,608  4894 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
-[INFO ] 2018-07-17 15:03:07,608  4894 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
-[INFO ] 2018-07-17 15:03:07,609  4895 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
-[INFO ] 2018-07-17 15:03:07,609  4895 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
-[INFO ] 2018-07-17 15:03:07,611  4897 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
-[INFO ] 2018-07-17 15:03:07,612  4898 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
-[INFO ] 2018-07-17 15:03:07,612  4898 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
-[INFO ] 2018-07-17 15:03:07,612  4898 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
-[INFO ] 2018-07-17 15:03:07,613  4899 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
-[INFO ] 2018-07-17 15:03:07,613  4899 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
-[INFO ] 2018-07-17 15:03:07,613  4899 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
-[INFO ] 2018-07-17 15:03:07,613  4899 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.util.ContentTypeMatcher)
-[INFO ] 2018-07-17 15:03:07,613  4899 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
-[INFO ] 2018-07-17 15:03:07,614  4900 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
-[INFO ] 2018-07-17 15:03:07,614  4900 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
-[INFO ] 2018-07-17 15:03:07,614  4900 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
-[INFO ] 2018-07-17 15:03:07,615  4901 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
-[INFO ] 2018-07-17 15:03:07,615  4901 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
-[INFO ] 2018-07-17 15:03:07,615  4901 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
-[INFO ] 2018-07-17 15:03:07,635  4921 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Initializing Struts-Spring integration...
-[INFO ] 2018-07-17 15:03:07,636  4922 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Setting autowire strategy to name
-[INFO ] 2018-07-17 15:03:07,636  4922 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:... initialized Struts-Spring integration successfully
-[WARN ] 2018-07-17 15:03:08,029  5315 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.warn(CommonsLogger.java:60)] method:No default parameter defined for result [json] of type [org.apache.struts2.json.JSONResult] 
-[WARN ] 2018-07-17 15:03:08,041  5327 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.warn(CommonsLogger.java:60)] method:No default parameter defined for result [json] of type [org.apache.struts2.json.JSONResult] 
-[ERROR] 2018-07-17 15:03:08,102  5388 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.error(CommonsLogger.java:42)] method:Unable to read class [com.sttri.action.ServerAction]
+[INFO ] 2018-07-18 14:31:52,023  5098 [org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:344)] method:Root WebApplicationContext: initialization completed in 5092 ms
+[INFO ] 2018-07-18 14:31:52,394  5469 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts-default.xml]
+[INFO ] 2018-07-18 14:31:52,510  5585 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts-plugin.xml]
+[INFO ] 2018-07-18 14:31:52,553  5628 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts.xml]
+[INFO ] 2018-07-18 14:31:52,555  5630 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+[INFO ] 2018-07-18 14:31:52,558  5633 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
+[INFO ] 2018-07-18 14:31:52,567  5642 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
+[INFO ] 2018-07-18 14:31:52,574  5649 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
+[INFO ] 2018-07-18 14:31:52,575  5650 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
+[INFO ] 2018-07-18 14:31:52,576  5651 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
+[INFO ] 2018-07-18 14:31:52,576  5651 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
+[INFO ] 2018-07-18 14:31:52,579  5654 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+[INFO ] 2018-07-18 14:31:52,580  5655 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+[INFO ] 2018-07-18 14:31:52,580  5655 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+[INFO ] 2018-07-18 14:31:52,581  5656 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+[INFO ] 2018-07-18 14:31:52,581  5656 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+[INFO ] 2018-07-18 14:31:52,585  5660 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+[INFO ] 2018-07-18 14:31:52,586  5661 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+[INFO ] 2018-07-18 14:31:52,587  5662 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+[INFO ] 2018-07-18 14:31:52,588  5663 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+[INFO ] 2018-07-18 14:31:52,589  5664 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+[INFO ] 2018-07-18 14:31:52,591  5666 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+[INFO ] 2018-07-18 14:31:52,592  5667 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+[INFO ] 2018-07-18 14:31:52,592  5667 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+[INFO ] 2018-07-18 14:31:52,592  5667 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+[INFO ] 2018-07-18 14:31:52,592  5667 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+[INFO ] 2018-07-18 14:31:52,592  5667 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+[INFO ] 2018-07-18 14:31:52,593  5668 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+[INFO ] 2018-07-18 14:31:52,593  5668 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+[INFO ] 2018-07-18 14:31:52,595  5670 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+[INFO ] 2018-07-18 14:31:52,597  5672 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+[INFO ] 2018-07-18 14:31:52,597  5672 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+[INFO ] 2018-07-18 14:31:52,597  5672 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+[INFO ] 2018-07-18 14:31:52,597  5672 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+[INFO ] 2018-07-18 14:31:52,598  5673 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+[INFO ] 2018-07-18 14:31:52,598  5673 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+[INFO ] 2018-07-18 14:31:52,598  5673 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.util.ContentTypeMatcher)
+[INFO ] 2018-07-18 14:31:52,598  5673 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+[INFO ] 2018-07-18 14:31:52,598  5673 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+[INFO ] 2018-07-18 14:31:52,598  5673 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+[INFO ] 2018-07-18 14:31:52,599  5674 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+[INFO ] 2018-07-18 14:31:52,600  5675 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
+[INFO ] 2018-07-18 14:31:52,600  5675 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
+[INFO ] 2018-07-18 14:31:52,601  5676 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
+[INFO ] 2018-07-18 14:31:52,615  5690 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Initializing Struts-Spring integration...
+[INFO ] 2018-07-18 14:31:52,622  5697 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Setting autowire strategy to name
+[INFO ] 2018-07-18 14:31:52,624  5699 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:... initialized Struts-Spring integration successfully
+[WARN ] 2018-07-18 14:31:52,989  6064 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.warn(CommonsLogger.java:60)] method:No default parameter defined for result [json] of type [org.apache.struts2.json.JSONResult] 
+[WARN ] 2018-07-18 14:31:52,998  6073 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.warn(CommonsLogger.java:60)] method:No default parameter defined for result [json] of type [org.apache.struts2.json.JSONResult] 
+[ERROR] 2018-07-18 14:31:53,060  6135 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.error(CommonsLogger.java:42)] method:Unable to read class [com.sttri.action.ServerAction]
+java.lang.ArrayIndexOutOfBoundsException: 24950
+	at org.objectweb.asm.ClassReader.readClass(Unknown Source)
+	at org.objectweb.asm.ClassReader.accept(Unknown Source)
+	at org.objectweb.asm.ClassReader.accept(Unknown Source)
+	at com.opensymphony.xwork2.util.finder.DefaultClassFinder.readClassDef(DefaultClassFinder.java:473)
+	at com.opensymphony.xwork2.util.finder.DefaultClassFinder.<init>(DefaultClassFinder.java:96)
+	at org.apache.struts2.convention.PackageBasedActionConfigBuilder.buildClassFinder(PackageBasedActionConfigBuilder.java:416)
+	at org.apache.struts2.convention.PackageBasedActionConfigBuilder.findActions(PackageBasedActionConfigBuilder.java:397)
+	at org.apache.struts2.convention.PackageBasedActionConfigBuilder.buildActionConfigs(PackageBasedActionConfigBuilder.java:354)
+	at org.apache.struts2.convention.ClasspathPackageProvider.loadPackages(ClasspathPackageProvider.java:53)
+	at com.opensymphony.xwork2.config.impl.DefaultConfiguration.reloadContainer(DefaultConfiguration.java:274)
+	at com.opensymphony.xwork2.config.ConfigurationManager.getConfiguration(ConfigurationManager.java:67)
+	at org.apache.struts2.dispatcher.Dispatcher.getContainer(Dispatcher.java:978)
+	at org.apache.struts2.dispatcher.Dispatcher.init_PreloadConfiguration(Dispatcher.java:446)
+	at org.apache.struts2.dispatcher.Dispatcher.init(Dispatcher.java:490)
+	at org.apache.struts2.dispatcher.ng.InitOperations.initDispatcher(InitOperations.java:74)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.init(StrutsPrepareAndExecuteFilter.java:57)
+	at org.mortbay.jetty.servlet.FilterHolder.doStart(FilterHolder.java:97)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.servlet.ServletHandler.initialize(ServletHandler.java:713)
+	at org.mortbay.jetty.servlet.Context.startContext(Context.java:140)
+	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1282)
+	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:518)
+	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:499)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:130)
+	at org.mortbay.jetty.Server.doStart(Server.java:224)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at runjettyrun.Bootstrap.main(Bootstrap.java:97)
+[INFO ] 2018-07-18 14:35:55,320  0    [org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:304)] method:Root WebApplicationContext: initialization started
+[INFO ] 2018-07-18 14:35:55,397  77   [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:583)] method:Refreshing Root WebApplicationContext: startup date [Wed Jul 18 14:35:55 CST 2018]; root of context hierarchy
+[INFO ] 2018-07-18 14:35:55,487  167  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [applicationContext-jdbc.xml]
+[INFO ] 2018-07-18 14:35:55,887  567  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [applicationContext-beans.xml]
+[INFO ] 2018-07-18 14:35:55,956  636  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+[INFO ] 2018-07-18 14:35:57,007  1687 [com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:638)] method:{dataSource-1} inited
+[INFO ] 2018-07-18 14:35:57,508  2188 [org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:715)] method:Building new Hibernate SessionFactory
+[INFO ] 2018-07-18 14:35:58,088  2768 [org.springframework.orm.hibernate3.HibernateTransactionManager.afterPropertiesSet(HibernateTransactionManager.java:420)] method:Using DataSource [{
+	CreateTime:"2018-07-18 14:35:56",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:1,
+	ConnectCount:1,
+	Connections:[
+		{ID:1691858720, ConnectTime:"2018-07-18 14:35:56", UseCount:1, LastActiveTime:"2018-07-18 14:35:57"}
+	]
+}
+
+[
+	{
+	ID:1691858720, 
+	poolStatements:[
+		]
+	}
+]] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO ] 2018-07-18 14:35:59,040  3720 [org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:344)] method:Root WebApplicationContext: initialization completed in 3715 ms
+[INFO ] 2018-07-18 14:35:59,268  3948 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts-default.xml]
+[INFO ] 2018-07-18 14:35:59,387  4067 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts-plugin.xml]
+[INFO ] 2018-07-18 14:35:59,417  4097 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts.xml]
+[INFO ] 2018-07-18 14:35:59,425  4105 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+[INFO ] 2018-07-18 14:35:59,432  4112 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
+[INFO ] 2018-07-18 14:35:59,437  4117 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
+[INFO ] 2018-07-18 14:35:59,451  4131 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
+[INFO ] 2018-07-18 14:35:59,457  4137 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
+[INFO ] 2018-07-18 14:35:59,463  4143 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
+[INFO ] 2018-07-18 14:35:59,468  4148 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
+[INFO ] 2018-07-18 14:35:59,468  4148 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+[INFO ] 2018-07-18 14:35:59,469  4149 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+[INFO ] 2018-07-18 14:35:59,469  4149 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+[INFO ] 2018-07-18 14:35:59,470  4150 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+[INFO ] 2018-07-18 14:35:59,470  4150 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+[INFO ] 2018-07-18 14:35:59,475  4155 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+[INFO ] 2018-07-18 14:35:59,475  4155 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+[INFO ] 2018-07-18 14:35:59,476  4156 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+[INFO ] 2018-07-18 14:35:59,476  4156 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+[INFO ] 2018-07-18 14:35:59,476  4156 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+[INFO ] 2018-07-18 14:35:59,478  4158 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+[INFO ] 2018-07-18 14:35:59,480  4160 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+[INFO ] 2018-07-18 14:35:59,480  4160 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+[INFO ] 2018-07-18 14:35:59,480  4160 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+[INFO ] 2018-07-18 14:35:59,480  4160 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+[INFO ] 2018-07-18 14:35:59,480  4160 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+[INFO ] 2018-07-18 14:35:59,481  4161 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+[INFO ] 2018-07-18 14:35:59,482  4162 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+[INFO ] 2018-07-18 14:35:59,482  4162 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+[INFO ] 2018-07-18 14:35:59,483  4163 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+[INFO ] 2018-07-18 14:35:59,484  4164 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+[INFO ] 2018-07-18 14:35:59,484  4164 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+[INFO ] 2018-07-18 14:35:59,485  4165 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+[INFO ] 2018-07-18 14:35:59,486  4166 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+[INFO ] 2018-07-18 14:35:59,486  4166 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+[INFO ] 2018-07-18 14:35:59,486  4166 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.util.ContentTypeMatcher)
+[INFO ] 2018-07-18 14:35:59,486  4166 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+[INFO ] 2018-07-18 14:35:59,487  4167 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+[INFO ] 2018-07-18 14:35:59,487  4167 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+[INFO ] 2018-07-18 14:35:59,488  4168 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+[INFO ] 2018-07-18 14:35:59,488  4168 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
+[INFO ] 2018-07-18 14:35:59,489  4169 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
+[INFO ] 2018-07-18 14:35:59,489  4169 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
+[INFO ] 2018-07-18 14:35:59,508  4188 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Initializing Struts-Spring integration...
+[INFO ] 2018-07-18 14:35:59,540  4220 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Setting autowire strategy to name
+[INFO ] 2018-07-18 14:35:59,545  4225 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:... initialized Struts-Spring integration successfully
+[WARN ] 2018-07-18 14:35:59,941  4621 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.warn(CommonsLogger.java:60)] method:No default parameter defined for result [json] of type [org.apache.struts2.json.JSONResult] 
+[WARN ] 2018-07-18 14:35:59,948  4628 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.warn(CommonsLogger.java:60)] method:No default parameter defined for result [json] of type [org.apache.struts2.json.JSONResult] 
+[ERROR] 2018-07-18 14:36:00,015  4695 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.error(CommonsLogger.java:42)] method:Unable to read class [com.sttri.action.ServerAction]
 java.lang.ArrayIndexOutOfBoundsException: 26415
 	at org.objectweb.asm.ClassReader.readClass(Unknown Source)
 	at org.objectweb.asm.ClassReader.accept(Unknown Source)
@@ -104,15 +210,15 @@ java.lang.ArrayIndexOutOfBoundsException: 26415
 	at org.mortbay.jetty.Server.doStart(Server.java:224)
 	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
 	at runjettyrun.Bootstrap.main(Bootstrap.java:97)
-[INFO ] 2018-07-17 15:04:52,360  0    [org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:304)] method:Root WebApplicationContext: initialization started
-[INFO ] 2018-07-17 15:04:52,434  74   [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:583)] method:Refreshing Root WebApplicationContext: startup date [Tue Jul 17 15:04:52 CST 2018]; root of context hierarchy
-[INFO ] 2018-07-17 15:04:52,493  133  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [applicationContext-jdbc.xml]
-[INFO ] 2018-07-17 15:04:52,875  515  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [applicationContext-beans.xml]
-[INFO ] 2018-07-17 15:04:52,933  573  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
-[INFO ] 2018-07-17 15:04:53,969  1609 [com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:638)] method:{dataSource-1} inited
-[INFO ] 2018-07-17 15:04:54,513  2153 [org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:715)] method:Building new Hibernate SessionFactory
-[INFO ] 2018-07-17 15:04:55,131  2771 [org.springframework.orm.hibernate3.HibernateTransactionManager.afterPropertiesSet(HibernateTransactionManager.java:420)] method:Using DataSource [{
-	CreateTime:"2018-07-17 15:04:53",
+[INFO ] 2018-07-18 14:43:44,353  0    [org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:304)] method:Root WebApplicationContext: initialization started
+[INFO ] 2018-07-18 14:43:44,480  127  [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:583)] method:Refreshing Root WebApplicationContext: startup date [Wed Jul 18 14:43:44 CST 2018]; root of context hierarchy
+[INFO ] 2018-07-18 14:43:44,534  181  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [applicationContext-jdbc.xml]
+[INFO ] 2018-07-18 14:43:44,930  577  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [applicationContext-beans.xml]
+[INFO ] 2018-07-18 14:43:44,988  635  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+[INFO ] 2018-07-18 14:43:46,077  1724 [com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:638)] method:{dataSource-1} inited
+[INFO ] 2018-07-18 14:43:46,641  2288 [org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:715)] method:Building new Hibernate SessionFactory
+[INFO ] 2018-07-18 14:43:47,239  2886 [org.springframework.orm.hibernate3.HibernateTransactionManager.afterPropertiesSet(HibernateTransactionManager.java:420)] method:Using DataSource [{
+	CreateTime:"2018-07-18 14:43:45",
 	ActiveCount:0,
 	PoolingCount:1,
 	CreateCount:1,
@@ -120,7 +226,7 @@ java.lang.ArrayIndexOutOfBoundsException: 26415
 	CloseCount:1,
 	ConnectCount:1,
 	Connections:[
-		{ID:1691858720, ConnectTime:"2018-07-17 15:04:53", UseCount:1, LastActiveTime:"2018-07-17 15:04:54"}
+		{ID:1691858720, ConnectTime:"2018-07-18 14:43:46", UseCount:1, LastActiveTime:"2018-07-18 14:43:46"}
 	]
 }
 
@@ -131,56 +237,56 @@ java.lang.ArrayIndexOutOfBoundsException: 26415
 		]
 	}
 ]] of Hibernate SessionFactory for HibernateTransactionManager
-[INFO ] 2018-07-17 15:04:56,653  4293 [org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:344)] method:Root WebApplicationContext: initialization completed in 4288 ms
-[INFO ] 2018-07-17 15:04:56,916  4556 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts-default.xml]
-[INFO ] 2018-07-17 15:04:57,036  4676 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts-plugin.xml]
-[INFO ] 2018-07-17 15:04:57,061  4701 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts.xml]
-[INFO ] 2018-07-17 15:04:57,065  4705 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
-[INFO ] 2018-07-17 15:04:57,065  4705 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
-[INFO ] 2018-07-17 15:04:57,066  4706 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
-[INFO ] 2018-07-17 15:04:57,075  4715 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
-[INFO ] 2018-07-17 15:04:57,079  4719 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
-[INFO ] 2018-07-17 15:04:57,079  4719 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
-[INFO ] 2018-07-17 15:04:57,080  4720 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
-[INFO ] 2018-07-17 15:04:57,080  4720 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
-[INFO ] 2018-07-17 15:04:57,080  4720 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
-[INFO ] 2018-07-17 15:04:57,080  4720 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
-[INFO ] 2018-07-17 15:04:57,081  4721 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
-[INFO ] 2018-07-17 15:04:57,083  4723 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
-[INFO ] 2018-07-17 15:04:57,089  4729 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
-[INFO ] 2018-07-17 15:04:57,089  4729 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
-[INFO ] 2018-07-17 15:04:57,090  4730 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
-[INFO ] 2018-07-17 15:04:57,090  4730 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
-[INFO ] 2018-07-17 15:04:57,090  4730 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
-[INFO ] 2018-07-17 15:04:57,094  4734 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
-[INFO ] 2018-07-17 15:04:57,096  4736 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
-[INFO ] 2018-07-17 15:04:57,096  4736 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
-[INFO ] 2018-07-17 15:04:57,096  4736 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
-[INFO ] 2018-07-17 15:04:57,096  4736 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
-[INFO ] 2018-07-17 15:04:57,096  4736 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
-[INFO ] 2018-07-17 15:04:57,097  4737 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
-[INFO ] 2018-07-17 15:04:57,097  4737 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
-[INFO ] 2018-07-17 15:04:57,099  4739 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
-[INFO ] 2018-07-17 15:04:57,100  4740 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
-[INFO ] 2018-07-17 15:04:57,100  4740 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
-[INFO ] 2018-07-17 15:04:57,117  4757 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
-[INFO ] 2018-07-17 15:04:57,121  4761 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
-[INFO ] 2018-07-17 15:04:57,121  4761 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
-[INFO ] 2018-07-17 15:04:57,121  4761 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
-[INFO ] 2018-07-17 15:04:57,122  4762 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.util.ContentTypeMatcher)
-[INFO ] 2018-07-17 15:04:57,122  4762 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
-[INFO ] 2018-07-17 15:04:57,122  4762 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
-[INFO ] 2018-07-17 15:04:57,122  4762 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
-[INFO ] 2018-07-17 15:04:57,123  4763 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
-[INFO ] 2018-07-17 15:04:57,124  4764 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
-[INFO ] 2018-07-17 15:04:57,124  4764 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
-[INFO ] 2018-07-17 15:04:57,125  4765 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
-[INFO ] 2018-07-17 15:04:57,140  4780 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Initializing Struts-Spring integration...
-[INFO ] 2018-07-17 15:04:57,146  4786 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Setting autowire strategy to name
-[INFO ] 2018-07-17 15:04:57,146  4786 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:... initialized Struts-Spring integration successfully
-[WARN ] 2018-07-17 15:04:57,623  5263 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.warn(CommonsLogger.java:60)] method:No default parameter defined for result [json] of type [org.apache.struts2.json.JSONResult] 
-[WARN ] 2018-07-17 15:04:57,638  5278 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.warn(CommonsLogger.java:60)] method:No default parameter defined for result [json] of type [org.apache.struts2.json.JSONResult] 
-[ERROR] 2018-07-17 15:04:57,715  5355 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.error(CommonsLogger.java:42)] method:Unable to read class [com.sttri.action.ServerAction]
+[INFO ] 2018-07-18 14:43:48,271  3918 [org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:344)] method:Root WebApplicationContext: initialization completed in 3912 ms
+[INFO ] 2018-07-18 14:43:48,504  4151 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts-default.xml]
+[INFO ] 2018-07-18 14:43:48,604  4251 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts-plugin.xml]
+[INFO ] 2018-07-18 14:43:48,637  4284 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts.xml]
+[INFO ] 2018-07-18 14:43:48,644  4291 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+[INFO ] 2018-07-18 14:43:48,651  4298 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
+[INFO ] 2018-07-18 14:43:48,679  4326 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
+[INFO ] 2018-07-18 14:43:48,689  4336 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
+[INFO ] 2018-07-18 14:43:48,695  4342 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
+[INFO ] 2018-07-18 14:43:48,700  4347 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
+[INFO ] 2018-07-18 14:43:48,706  4353 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
+[INFO ] 2018-07-18 14:43:48,714  4361 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+[INFO ] 2018-07-18 14:43:48,720  4367 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+[INFO ] 2018-07-18 14:43:48,725  4372 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+[INFO ] 2018-07-18 14:43:48,734  4381 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+[INFO ] 2018-07-18 14:43:48,735  4382 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+[INFO ] 2018-07-18 14:43:48,740  4387 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+[INFO ] 2018-07-18 14:43:48,740  4387 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+[INFO ] 2018-07-18 14:43:48,740  4387 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+[INFO ] 2018-07-18 14:43:48,741  4388 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+[INFO ] 2018-07-18 14:43:48,741  4388 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+[INFO ] 2018-07-18 14:43:48,743  4390 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+[INFO ] 2018-07-18 14:43:48,745  4392 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+[INFO ] 2018-07-18 14:43:48,747  4394 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+[INFO ] 2018-07-18 14:43:48,747  4394 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+[INFO ] 2018-07-18 14:43:48,747  4394 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+[INFO ] 2018-07-18 14:43:48,747  4394 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+[INFO ] 2018-07-18 14:43:48,748  4395 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+[INFO ] 2018-07-18 14:43:48,748  4395 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+[INFO ] 2018-07-18 14:43:48,749  4396 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+[INFO ] 2018-07-18 14:43:48,750  4397 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+[INFO ] 2018-07-18 14:43:48,753  4400 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+[INFO ] 2018-07-18 14:43:48,753  4400 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+[INFO ] 2018-07-18 14:43:48,753  4400 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+[INFO ] 2018-07-18 14:43:48,754  4401 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+[INFO ] 2018-07-18 14:43:48,754  4401 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+[INFO ] 2018-07-18 14:43:48,754  4401 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.util.ContentTypeMatcher)
+[INFO ] 2018-07-18 14:43:48,754  4401 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+[INFO ] 2018-07-18 14:43:48,755  4402 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+[INFO ] 2018-07-18 14:43:48,755  4402 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+[INFO ] 2018-07-18 14:43:48,757  4404 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+[INFO ] 2018-07-18 14:43:48,758  4405 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
+[INFO ] 2018-07-18 14:43:48,758  4405 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
+[INFO ] 2018-07-18 14:43:48,759  4406 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
+[INFO ] 2018-07-18 14:43:48,773  4420 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Initializing Struts-Spring integration...
+[INFO ] 2018-07-18 14:43:48,776  4423 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Setting autowire strategy to name
+[INFO ] 2018-07-18 14:43:48,777  4424 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:... initialized Struts-Spring integration successfully
+[WARN ] 2018-07-18 14:43:49,104  4751 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.warn(CommonsLogger.java:60)] method:No default parameter defined for result [json] of type [org.apache.struts2.json.JSONResult] 
+[WARN ] 2018-07-18 14:43:49,113  4760 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.warn(CommonsLogger.java:60)] method:No default parameter defined for result [json] of type [org.apache.struts2.json.JSONResult] 
+[ERROR] 2018-07-18 14:43:49,174  4821 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.error(CommonsLogger.java:42)] method:Unable to read class [com.sttri.action.ServerAction]
 java.lang.ArrayIndexOutOfBoundsException: 26415
 	at org.objectweb.asm.ClassReader.readClass(Unknown Source)
 	at org.objectweb.asm.ClassReader.accept(Unknown Source)
@@ -210,15 +316,15 @@ java.lang.ArrayIndexOutOfBoundsException: 26415
 	at org.mortbay.jetty.Server.doStart(Server.java:224)
 	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
 	at runjettyrun.Bootstrap.main(Bootstrap.java:97)
-[INFO ] 2018-07-17 15:05:16,823  0    [org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:304)] method:Root WebApplicationContext: initialization started
-[INFO ] 2018-07-17 15:05:16,902  79   [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:583)] method:Refreshing Root WebApplicationContext: startup date [Tue Jul 17 15:05:16 CST 2018]; root of context hierarchy
-[INFO ] 2018-07-17 15:05:16,970  147  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [applicationContext-jdbc.xml]
-[INFO ] 2018-07-17 15:05:17,352  529  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [applicationContext-beans.xml]
-[INFO ] 2018-07-17 15:05:17,417  594  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
-[INFO ] 2018-07-17 15:05:18,446  1623 [com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:638)] method:{dataSource-1} inited
-[INFO ] 2018-07-17 15:05:19,211  2388 [org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:715)] method:Building new Hibernate SessionFactory
-[INFO ] 2018-07-17 15:05:19,780  2957 [org.springframework.orm.hibernate3.HibernateTransactionManager.afterPropertiesSet(HibernateTransactionManager.java:420)] method:Using DataSource [{
-	CreateTime:"2018-07-17 15:05:18",
+[INFO ] 2018-07-18 14:43:54,315  0    [org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:304)] method:Root WebApplicationContext: initialization started
+[INFO ] 2018-07-18 14:43:54,405  90   [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:583)] method:Refreshing Root WebApplicationContext: startup date [Wed Jul 18 14:43:54 CST 2018]; root of context hierarchy
+[INFO ] 2018-07-18 14:43:54,483  168  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [applicationContext-jdbc.xml]
+[INFO ] 2018-07-18 14:43:54,947  632  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [applicationContext-beans.xml]
+[INFO ] 2018-07-18 14:43:55,012  697  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+[INFO ] 2018-07-18 14:43:56,372  2057 [com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:638)] method:{dataSource-1} inited
+[INFO ] 2018-07-18 14:43:57,011  2696 [org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:715)] method:Building new Hibernate SessionFactory
+[INFO ] 2018-07-18 14:43:57,662  3347 [org.springframework.orm.hibernate3.HibernateTransactionManager.afterPropertiesSet(HibernateTransactionManager.java:420)] method:Using DataSource [{
+	CreateTime:"2018-07-18 14:43:56",
 	ActiveCount:0,
 	PoolingCount:1,
 	CreateCount:1,
@@ -226,67 +332,67 @@ java.lang.ArrayIndexOutOfBoundsException: 26415
 	CloseCount:1,
 	ConnectCount:1,
 	Connections:[
-		{ID:1691858720, ConnectTime:"2018-07-17 15:05:18", UseCount:1, LastActiveTime:"2018-07-17 15:05:19"}
+		{ID:309349909, ConnectTime:"2018-07-18 14:43:56", UseCount:1, LastActiveTime:"2018-07-18 14:43:57"}
 	]
 }
 
 [
 	{
-	ID:1691858720, 
+	ID:309349909, 
 	poolStatements:[
 		]
 	}
 ]] of Hibernate SessionFactory for HibernateTransactionManager
-[INFO ] 2018-07-17 15:05:21,670  4847 [org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:344)] method:Root WebApplicationContext: initialization completed in 4838 ms
-[INFO ] 2018-07-17 15:05:21,961  5138 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts-default.xml]
-[INFO ] 2018-07-17 15:05:22,076  5253 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts-plugin.xml]
-[INFO ] 2018-07-17 15:05:22,104  5281 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts.xml]
-[INFO ] 2018-07-17 15:05:22,112  5289 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
-[INFO ] 2018-07-17 15:05:22,122  5299 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
-[INFO ] 2018-07-17 15:05:22,132  5309 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
-[INFO ] 2018-07-17 15:05:22,143  5320 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
-[INFO ] 2018-07-17 15:05:22,148  5325 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
-[INFO ] 2018-07-17 15:05:22,153  5330 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
-[INFO ] 2018-07-17 15:05:22,159  5336 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
-[INFO ] 2018-07-17 15:05:22,169  5346 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
-[INFO ] 2018-07-17 15:05:22,174  5351 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
-[INFO ] 2018-07-17 15:05:22,179  5356 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
-[INFO ] 2018-07-17 15:05:22,199  5376 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
-[INFO ] 2018-07-17 15:05:22,204  5381 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
-[INFO ] 2018-07-17 15:05:22,213  5390 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
-[INFO ] 2018-07-17 15:05:22,218  5395 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
-[INFO ] 2018-07-17 15:05:22,223  5400 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
-[INFO ] 2018-07-17 15:05:22,228  5405 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
-[INFO ] 2018-07-17 15:05:22,233  5410 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
-[INFO ] 2018-07-17 15:05:22,239  5416 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
-[INFO ] 2018-07-17 15:05:22,245  5422 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
-[INFO ] 2018-07-17 15:05:22,264  5441 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
-[INFO ] 2018-07-17 15:05:22,265  5442 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
-[INFO ] 2018-07-17 15:05:22,265  5442 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
-[INFO ] 2018-07-17 15:05:22,265  5442 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
-[INFO ] 2018-07-17 15:05:22,266  5443 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
-[INFO ] 2018-07-17 15:05:22,266  5443 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
-[INFO ] 2018-07-17 15:05:22,267  5444 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
-[INFO ] 2018-07-17 15:05:22,267  5444 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
-[INFO ] 2018-07-17 15:05:22,268  5445 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
-[INFO ] 2018-07-17 15:05:22,268  5445 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
-[INFO ] 2018-07-17 15:05:22,268  5445 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
-[INFO ] 2018-07-17 15:05:22,268  5445 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
-[INFO ] 2018-07-17 15:05:22,268  5445 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
-[INFO ] 2018-07-17 15:05:22,268  5445 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.util.ContentTypeMatcher)
-[INFO ] 2018-07-17 15:05:22,269  5446 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
-[INFO ] 2018-07-17 15:05:22,269  5446 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
-[INFO ] 2018-07-17 15:05:22,269  5446 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
-[INFO ] 2018-07-17 15:05:22,269  5446 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
-[INFO ] 2018-07-17 15:05:22,270  5447 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
-[INFO ] 2018-07-17 15:05:22,270  5447 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
-[INFO ] 2018-07-17 15:05:22,270  5447 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
-[INFO ] 2018-07-17 15:05:22,283  5460 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Initializing Struts-Spring integration...
-[INFO ] 2018-07-17 15:05:22,284  5461 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Setting autowire strategy to name
-[INFO ] 2018-07-17 15:05:22,284  5461 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:... initialized Struts-Spring integration successfully
-[WARN ] 2018-07-17 15:05:22,639  5816 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.warn(CommonsLogger.java:60)] method:No default parameter defined for result [json] of type [org.apache.struts2.json.JSONResult] 
-[WARN ] 2018-07-17 15:05:22,646  5823 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.warn(CommonsLogger.java:60)] method:No default parameter defined for result [json] of type [org.apache.struts2.json.JSONResult] 
-[ERROR] 2018-07-17 15:05:22,713  5890 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.error(CommonsLogger.java:42)] method:Unable to read class [com.sttri.action.ServerAction]
+[INFO ] 2018-07-18 14:43:59,083  4768 [org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:344)] method:Root WebApplicationContext: initialization completed in 4763 ms
+[INFO ] 2018-07-18 14:43:59,365  5050 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts-default.xml]
+[INFO ] 2018-07-18 14:43:59,482  5167 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts-plugin.xml]
+[INFO ] 2018-07-18 14:43:59,523  5208 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts.xml]
+[INFO ] 2018-07-18 14:43:59,532  5217 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+[INFO ] 2018-07-18 14:43:59,532  5217 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
+[INFO ] 2018-07-18 14:43:59,533  5218 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
+[INFO ] 2018-07-18 14:43:59,541  5226 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
+[INFO ] 2018-07-18 14:43:59,555  5240 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
+[INFO ] 2018-07-18 14:43:59,555  5240 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
+[INFO ] 2018-07-18 14:43:59,555  5240 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
+[INFO ] 2018-07-18 14:43:59,555  5240 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+[INFO ] 2018-07-18 14:43:59,555  5240 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+[INFO ] 2018-07-18 14:43:59,556  5241 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+[INFO ] 2018-07-18 14:43:59,557  5242 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+[INFO ] 2018-07-18 14:43:59,557  5242 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+[INFO ] 2018-07-18 14:43:59,563  5248 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+[INFO ] 2018-07-18 14:43:59,563  5248 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+[INFO ] 2018-07-18 14:43:59,564  5249 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+[INFO ] 2018-07-18 14:43:59,564  5249 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+[INFO ] 2018-07-18 14:43:59,564  5249 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+[INFO ] 2018-07-18 14:43:59,566  5251 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+[INFO ] 2018-07-18 14:43:59,568  5253 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+[INFO ] 2018-07-18 14:43:59,568  5253 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+[INFO ] 2018-07-18 14:43:59,568  5253 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+[INFO ] 2018-07-18 14:43:59,569  5254 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+[INFO ] 2018-07-18 14:43:59,569  5254 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+[INFO ] 2018-07-18 14:43:59,569  5254 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+[INFO ] 2018-07-18 14:43:59,569  5254 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+[INFO ] 2018-07-18 14:43:59,571  5256 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+[INFO ] 2018-07-18 14:43:59,572  5257 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+[INFO ] 2018-07-18 14:43:59,572  5257 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+[INFO ] 2018-07-18 14:43:59,573  5258 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+[INFO ] 2018-07-18 14:43:59,573  5258 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+[INFO ] 2018-07-18 14:43:59,573  5258 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+[INFO ] 2018-07-18 14:43:59,573  5258 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+[INFO ] 2018-07-18 14:43:59,573  5258 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.util.ContentTypeMatcher)
+[INFO ] 2018-07-18 14:43:59,574  5259 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+[INFO ] 2018-07-18 14:43:59,575  5260 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+[INFO ] 2018-07-18 14:43:59,575  5260 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+[INFO ] 2018-07-18 14:43:59,575  5260 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+[INFO ] 2018-07-18 14:43:59,576  5261 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
+[INFO ] 2018-07-18 14:43:59,576  5261 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
+[INFO ] 2018-07-18 14:43:59,577  5262 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
+[INFO ] 2018-07-18 14:43:59,597  5282 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Initializing Struts-Spring integration...
+[INFO ] 2018-07-18 14:43:59,600  5285 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Setting autowire strategy to name
+[INFO ] 2018-07-18 14:43:59,600  5285 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:... initialized Struts-Spring integration successfully
+[WARN ] 2018-07-18 14:44:00,042  5727 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.warn(CommonsLogger.java:60)] method:No default parameter defined for result [json] of type [org.apache.struts2.json.JSONResult] 
+[WARN ] 2018-07-18 14:44:00,051  5736 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.warn(CommonsLogger.java:60)] method:No default parameter defined for result [json] of type [org.apache.struts2.json.JSONResult] 
+[ERROR] 2018-07-18 14:44:00,557  6242 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.error(CommonsLogger.java:42)] method:Unable to read class [com.sttri.action.ServerAction]
 java.lang.ArrayIndexOutOfBoundsException: 26415
 	at org.objectweb.asm.ClassReader.readClass(Unknown Source)
 	at org.objectweb.asm.ClassReader.accept(Unknown Source)
@@ -316,15 +422,15 @@ java.lang.ArrayIndexOutOfBoundsException: 26415
 	at org.mortbay.jetty.Server.doStart(Server.java:224)
 	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
 	at runjettyrun.Bootstrap.main(Bootstrap.java:97)
-[INFO ] 2018-07-17 15:07:05,908  0    [org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:304)] method:Root WebApplicationContext: initialization started
-[INFO ] 2018-07-17 15:07:06,041  133  [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:583)] method:Refreshing Root WebApplicationContext: startup date [Tue Jul 17 15:07:05 CST 2018]; root of context hierarchy
-[INFO ] 2018-07-17 15:07:06,095  187  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [applicationContext-jdbc.xml]
-[INFO ] 2018-07-17 15:07:06,489  581  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [applicationContext-beans.xml]
-[INFO ] 2018-07-17 15:07:06,561  653  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
-[INFO ] 2018-07-17 15:07:07,604  1696 [com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:638)] method:{dataSource-1} inited
-[INFO ] 2018-07-17 15:07:08,122  2214 [org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:715)] method:Building new Hibernate SessionFactory
-[INFO ] 2018-07-17 15:07:08,705  2797 [org.springframework.orm.hibernate3.HibernateTransactionManager.afterPropertiesSet(HibernateTransactionManager.java:420)] method:Using DataSource [{
-	CreateTime:"2018-07-17 15:07:07",
+[INFO ] 2018-07-18 14:56:46,930  0    [org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:304)] method:Root WebApplicationContext: initialization started
+[INFO ] 2018-07-18 14:56:47,006  76   [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:583)] method:Refreshing Root WebApplicationContext: startup date [Wed Jul 18 14:56:47 CST 2018]; root of context hierarchy
+[INFO ] 2018-07-18 14:56:47,093  163  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [applicationContext-jdbc.xml]
+[INFO ] 2018-07-18 14:56:47,515  585  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [applicationContext-beans.xml]
+[INFO ] 2018-07-18 14:56:47,578  648  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+[INFO ] 2018-07-18 14:56:48,739  1809 [com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:638)] method:{dataSource-1} inited
+[INFO ] 2018-07-18 14:56:49,280  2350 [org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:715)] method:Building new Hibernate SessionFactory
+[INFO ] 2018-07-18 14:56:49,827  2897 [org.springframework.orm.hibernate3.HibernateTransactionManager.afterPropertiesSet(HibernateTransactionManager.java:420)] method:Using DataSource [{
+	CreateTime:"2018-07-18 14:56:48",
 	ActiveCount:0,
 	PoolingCount:1,
 	CreateCount:1,
@@ -332,7 +438,83 @@ java.lang.ArrayIndexOutOfBoundsException: 26415
 	CloseCount:1,
 	ConnectCount:1,
 	Connections:[
-		{ID:1691858720, ConnectTime:"2018-07-17 15:07:07", UseCount:1, LastActiveTime:"2018-07-17 15:07:08"}
+		{ID:1627781283, ConnectTime:"2018-07-18 14:56:48", UseCount:1, LastActiveTime:"2018-07-18 14:56:49"}
+	]
+}
+
+[
+	{
+	ID:1627781283, 
+	poolStatements:[
+		]
+	}
+]] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO ] 2018-07-18 14:56:50,873  3943 [org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:344)] method:Root WebApplicationContext: initialization completed in 3940 ms
+[INFO ] 2018-07-18 14:56:51,150  4220 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts-default.xml]
+[INFO ] 2018-07-18 14:56:51,350  4420 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts-plugin.xml]
+[INFO ] 2018-07-18 14:56:51,533  4603 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts.xml]
+[INFO ] 2018-07-18 14:56:51,536  4606 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+[INFO ] 2018-07-18 14:56:51,538  4608 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
+[INFO ] 2018-07-18 14:56:51,538  4608 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
+[INFO ] 2018-07-18 14:56:51,545  4615 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
+[INFO ] 2018-07-18 14:56:51,548  4618 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
+[INFO ] 2018-07-18 14:56:51,548  4618 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
+[INFO ] 2018-07-18 14:56:51,549  4619 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
+[INFO ] 2018-07-18 14:56:51,549  4619 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+[INFO ] 2018-07-18 14:56:51,549  4619 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+[INFO ] 2018-07-18 14:56:51,549  4619 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+[INFO ] 2018-07-18 14:56:51,550  4620 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+[INFO ] 2018-07-18 14:56:51,550  4620 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+[INFO ] 2018-07-18 14:56:51,555  4625 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+[INFO ] 2018-07-18 14:56:51,556  4626 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+[INFO ] 2018-07-18 14:56:51,556  4626 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+[INFO ] 2018-07-18 14:56:51,556  4626 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+[INFO ] 2018-07-18 14:56:51,556  4626 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+[INFO ] 2018-07-18 14:56:51,557  4627 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+[INFO ] 2018-07-18 14:56:51,557  4627 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+[INFO ] 2018-07-18 14:56:51,557  4627 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+[INFO ] 2018-07-18 14:56:51,559  4629 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+[INFO ] 2018-07-18 14:56:51,561  4631 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+[INFO ] 2018-07-18 14:56:51,561  4631 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+[INFO ] 2018-07-18 14:56:51,562  4632 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+[INFO ] 2018-07-18 14:56:51,562  4632 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+[INFO ] 2018-07-18 14:56:51,563  4633 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+[INFO ] 2018-07-18 14:56:51,564  4634 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+[INFO ] 2018-07-18 14:56:51,565  4635 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+[INFO ] 2018-07-18 14:56:51,565  4635 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+[INFO ] 2018-07-18 14:56:51,565  4635 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+[INFO ] 2018-07-18 14:56:51,565  4635 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+[INFO ] 2018-07-18 14:56:51,565  4635 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+[INFO ] 2018-07-18 14:56:51,565  4635 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.util.ContentTypeMatcher)
+[INFO ] 2018-07-18 14:56:51,566  4636 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+[INFO ] 2018-07-18 14:56:51,566  4636 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+[INFO ] 2018-07-18 14:56:51,566  4636 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+[INFO ] 2018-07-18 14:56:51,566  4636 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+[INFO ] 2018-07-18 14:56:51,566  4636 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
+[INFO ] 2018-07-18 14:56:51,566  4636 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
+[INFO ] 2018-07-18 14:56:51,567  4637 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
+[INFO ] 2018-07-18 14:56:51,720  4790 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Initializing Struts-Spring integration...
+[INFO ] 2018-07-18 14:56:51,725  4795 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Setting autowire strategy to name
+[INFO ] 2018-07-18 14:56:51,731  4801 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:... initialized Struts-Spring integration successfully
+[WARN ] 2018-07-18 14:56:52,698  5768 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.warn(CommonsLogger.java:60)] method:No default parameter defined for result [json] of type [org.apache.struts2.json.JSONResult] 
+[WARN ] 2018-07-18 14:56:52,700  5770 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.warn(CommonsLogger.java:60)] method:No default parameter defined for result [json] of type [org.apache.struts2.json.JSONResult] 
+[INFO ] 2018-07-18 15:06:59,674  0    [org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:304)] method:Root WebApplicationContext: initialization started
+[INFO ] 2018-07-18 15:06:59,775  101  [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:583)] method:Refreshing Root WebApplicationContext: startup date [Wed Jul 18 15:06:59 CST 2018]; root of context hierarchy
+[INFO ] 2018-07-18 15:06:59,835  161  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [applicationContext-jdbc.xml]
+[INFO ] 2018-07-18 15:07:00,277  603  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [applicationContext-beans.xml]
+[INFO ] 2018-07-18 15:07:00,347  673  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+[INFO ] 2018-07-18 15:07:01,456  1782 [com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:638)] method:{dataSource-1} inited
+[INFO ] 2018-07-18 15:07:02,126  2452 [org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:715)] method:Building new Hibernate SessionFactory
+[INFO ] 2018-07-18 15:07:02,788  3114 [org.springframework.orm.hibernate3.HibernateTransactionManager.afterPropertiesSet(HibernateTransactionManager.java:420)] method:Using DataSource [{
+	CreateTime:"2018-07-18 15:07:01",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:1,
+	ConnectCount:1,
+	Connections:[
+		{ID:1691858720, ConnectTime:"2018-07-18 15:07:01", UseCount:1, LastActiveTime:"2018-07-18 15:07:02"}
 	]
 }
 
@@ -343,56 +525,56 @@ java.lang.ArrayIndexOutOfBoundsException: 26415
 		]
 	}
 ]] of Hibernate SessionFactory for HibernateTransactionManager
-[INFO ] 2018-07-17 15:07:09,743  3835 [org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:344)] method:Root WebApplicationContext: initialization completed in 3830 ms
-[INFO ] 2018-07-17 15:07:09,968  4060 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts-default.xml]
-[INFO ] 2018-07-17 15:07:10,097  4189 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts-plugin.xml]
-[INFO ] 2018-07-17 15:07:10,126  4218 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts.xml]
-[INFO ] 2018-07-17 15:07:10,159  4251 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
-[INFO ] 2018-07-17 15:07:10,170  4262 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
-[INFO ] 2018-07-17 15:07:10,175  4267 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
-[INFO ] 2018-07-17 15:07:10,187  4279 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
-[INFO ] 2018-07-17 15:07:10,193  4285 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
-[INFO ] 2018-07-17 15:07:10,195  4287 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
-[INFO ] 2018-07-17 15:07:10,196  4288 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
-[INFO ] 2018-07-17 15:07:10,196  4288 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
-[INFO ] 2018-07-17 15:07:10,196  4288 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
-[INFO ] 2018-07-17 15:07:10,196  4288 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
-[INFO ] 2018-07-17 15:07:10,197  4289 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
-[INFO ] 2018-07-17 15:07:10,197  4289 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
-[INFO ] 2018-07-17 15:07:10,203  4295 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
-[INFO ] 2018-07-17 15:07:10,204  4296 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
-[INFO ] 2018-07-17 15:07:10,204  4296 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
-[INFO ] 2018-07-17 15:07:10,204  4296 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
-[INFO ] 2018-07-17 15:07:10,205  4297 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
-[INFO ] 2018-07-17 15:07:10,206  4298 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
-[INFO ] 2018-07-17 15:07:10,208  4300 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
-[INFO ] 2018-07-17 15:07:10,209  4301 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
-[INFO ] 2018-07-17 15:07:10,209  4301 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
-[INFO ] 2018-07-17 15:07:10,209  4301 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
-[INFO ] 2018-07-17 15:07:10,209  4301 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
-[INFO ] 2018-07-17 15:07:10,210  4302 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
-[INFO ] 2018-07-17 15:07:10,211  4303 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
-[INFO ] 2018-07-17 15:07:10,212  4304 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
-[INFO ] 2018-07-17 15:07:10,213  4305 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
-[INFO ] 2018-07-17 15:07:10,213  4305 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
-[INFO ] 2018-07-17 15:07:10,213  4305 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
-[INFO ] 2018-07-17 15:07:10,214  4306 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
-[INFO ] 2018-07-17 15:07:10,214  4306 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
-[INFO ] 2018-07-17 15:07:10,214  4306 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
-[INFO ] 2018-07-17 15:07:10,214  4306 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.util.ContentTypeMatcher)
-[INFO ] 2018-07-17 15:07:10,216  4308 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
-[INFO ] 2018-07-17 15:07:10,216  4308 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
-[INFO ] 2018-07-17 15:07:10,216  4308 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
-[INFO ] 2018-07-17 15:07:10,217  4309 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
-[INFO ] 2018-07-17 15:07:10,217  4309 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
-[INFO ] 2018-07-17 15:07:10,218  4310 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
-[INFO ] 2018-07-17 15:07:10,218  4310 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
-[INFO ] 2018-07-17 15:07:10,233  4325 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Initializing Struts-Spring integration...
-[INFO ] 2018-07-17 15:07:10,238  4330 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Setting autowire strategy to name
-[INFO ] 2018-07-17 15:07:10,243  4335 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:... initialized Struts-Spring integration successfully
-[WARN ] 2018-07-17 15:07:10,559  4651 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.warn(CommonsLogger.java:60)] method:No default parameter defined for result [json] of type [org.apache.struts2.json.JSONResult] 
-[WARN ] 2018-07-17 15:07:10,566  4658 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.warn(CommonsLogger.java:60)] method:No default parameter defined for result [json] of type [org.apache.struts2.json.JSONResult] 
-[ERROR] 2018-07-17 15:07:10,623  4715 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.error(CommonsLogger.java:42)] method:Unable to read class [com.sttri.action.ServerAction]
+[INFO ] 2018-07-18 15:07:03,886  4212 [org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:344)] method:Root WebApplicationContext: initialization completed in 4207 ms
+[INFO ] 2018-07-18 15:07:04,124  4450 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts-default.xml]
+[INFO ] 2018-07-18 15:07:04,243  4569 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts-plugin.xml]
+[INFO ] 2018-07-18 15:07:04,273  4599 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts.xml]
+[INFO ] 2018-07-18 15:07:04,282  4608 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+[INFO ] 2018-07-18 15:07:04,287  4613 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
+[INFO ] 2018-07-18 15:07:04,292  4618 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
+[INFO ] 2018-07-18 15:07:04,314  4640 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
+[INFO ] 2018-07-18 15:07:04,320  4646 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
+[INFO ] 2018-07-18 15:07:04,325  4651 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
+[INFO ] 2018-07-18 15:07:04,402  4728 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
+[INFO ] 2018-07-18 15:07:04,411  4737 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+[INFO ] 2018-07-18 15:07:04,426  4752 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+[INFO ] 2018-07-18 15:07:04,466  4792 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+[INFO ] 2018-07-18 15:07:04,472  4798 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+[INFO ] 2018-07-18 15:07:04,501  4827 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+[INFO ] 2018-07-18 15:07:04,504  4830 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+[INFO ] 2018-07-18 15:07:04,505  4831 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+[INFO ] 2018-07-18 15:07:04,505  4831 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+[INFO ] 2018-07-18 15:07:04,505  4831 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+[INFO ] 2018-07-18 15:07:04,505  4831 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+[INFO ] 2018-07-18 15:07:04,506  4832 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+[INFO ] 2018-07-18 15:07:04,508  4834 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+[INFO ] 2018-07-18 15:07:04,508  4834 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+[INFO ] 2018-07-18 15:07:04,508  4834 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+[INFO ] 2018-07-18 15:07:04,508  4834 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+[INFO ] 2018-07-18 15:07:04,508  4834 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+[INFO ] 2018-07-18 15:07:04,509  4835 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+[INFO ] 2018-07-18 15:07:04,510  4836 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+[INFO ] 2018-07-18 15:07:04,510  4836 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+[INFO ] 2018-07-18 15:07:04,511  4837 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+[INFO ] 2018-07-18 15:07:04,511  4837 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+[INFO ] 2018-07-18 15:07:04,512  4838 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+[INFO ] 2018-07-18 15:07:04,512  4838 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+[INFO ] 2018-07-18 15:07:04,512  4838 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+[INFO ] 2018-07-18 15:07:04,512  4838 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+[INFO ] 2018-07-18 15:07:04,543  4869 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.util.ContentTypeMatcher)
+[INFO ] 2018-07-18 15:07:04,543  4869 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+[INFO ] 2018-07-18 15:07:04,543  4869 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+[INFO ] 2018-07-18 15:07:04,543  4869 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+[INFO ] 2018-07-18 15:07:04,543  4869 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+[INFO ] 2018-07-18 15:07:04,544  4870 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
+[INFO ] 2018-07-18 15:07:04,545  4871 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
+[INFO ] 2018-07-18 15:07:04,545  4871 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
+[INFO ] 2018-07-18 15:07:04,557  4883 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Initializing Struts-Spring integration...
+[INFO ] 2018-07-18 15:07:04,557  4883 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Setting autowire strategy to name
+[INFO ] 2018-07-18 15:07:04,557  4883 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:... initialized Struts-Spring integration successfully
+[WARN ] 2018-07-18 15:07:04,916  5242 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.warn(CommonsLogger.java:60)] method:No default parameter defined for result [json] of type [org.apache.struts2.json.JSONResult] 
+[WARN ] 2018-07-18 15:07:04,923  5249 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.warn(CommonsLogger.java:60)] method:No default parameter defined for result [json] of type [org.apache.struts2.json.JSONResult] 
+[ERROR] 2018-07-18 15:07:04,992  5318 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.error(CommonsLogger.java:42)] method:Unable to read class [com.sttri.action.ServerAction]
 java.lang.ArrayIndexOutOfBoundsException: 26415
 	at org.objectweb.asm.ClassReader.readClass(Unknown Source)
 	at org.objectweb.asm.ClassReader.accept(Unknown Source)
@@ -422,15 +604,15 @@ java.lang.ArrayIndexOutOfBoundsException: 26415
 	at org.mortbay.jetty.Server.doStart(Server.java:224)
 	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
 	at runjettyrun.Bootstrap.main(Bootstrap.java:97)
-[INFO ] 2018-07-17 15:39:59,884  0    [org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:304)] method:Root WebApplicationContext: initialization started
-[INFO ] 2018-07-17 15:39:59,970  86   [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:583)] method:Refreshing Root WebApplicationContext: startup date [Tue Jul 17 15:39:59 CST 2018]; root of context hierarchy
-[INFO ] 2018-07-17 15:40:00,044  160  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [applicationContext-jdbc.xml]
-[INFO ] 2018-07-17 15:40:00,484  600  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [applicationContext-beans.xml]
-[INFO ] 2018-07-17 15:40:00,574  690  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
-[INFO ] 2018-07-17 15:40:01,674  1790 [com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:638)] method:{dataSource-1} inited
-[INFO ] 2018-07-17 15:40:02,272  2388 [org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:715)] method:Building new Hibernate SessionFactory
-[INFO ] 2018-07-17 15:40:02,878  2994 [org.springframework.orm.hibernate3.HibernateTransactionManager.afterPropertiesSet(HibernateTransactionManager.java:420)] method:Using DataSource [{
-	CreateTime:"2018-07-17 15:40:01",
+[INFO ] 2018-07-18 16:31:23,266  0    [org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:304)] method:Root WebApplicationContext: initialization started
+[INFO ] 2018-07-18 16:31:23,364  98   [org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:583)] method:Refreshing Root WebApplicationContext: startup date [Wed Jul 18 16:31:23 CST 2018]; root of context hierarchy
+[INFO ] 2018-07-18 16:31:23,442  176  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [applicationContext-jdbc.xml]
+[INFO ] 2018-07-18 16:31:23,832  566  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [applicationContext-beans.xml]
+[INFO ] 2018-07-18 16:31:23,901  635  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)] method:Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+[INFO ] 2018-07-18 16:31:24,991  1725 [com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:638)] method:{dataSource-1} inited
+[INFO ] 2018-07-18 16:31:25,512  2246 [org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:715)] method:Building new Hibernate SessionFactory
+[INFO ] 2018-07-18 16:31:26,193  2927 [org.springframework.orm.hibernate3.HibernateTransactionManager.afterPropertiesSet(HibernateTransactionManager.java:420)] method:Using DataSource [{
+	CreateTime:"2018-07-18 16:31:24",
 	ActiveCount:0,
 	PoolingCount:1,
 	CreateCount:1,
@@ -438,7 +620,7 @@ java.lang.ArrayIndexOutOfBoundsException: 26415
 	CloseCount:1,
 	ConnectCount:1,
 	Connections:[
-		{ID:1691858720, ConnectTime:"2018-07-17 15:40:01", UseCount:1, LastActiveTime:"2018-07-17 15:40:02"}
+		{ID:1691858720, ConnectTime:"2018-07-18 16:31:24", UseCount:1, LastActiveTime:"2018-07-18 16:31:25"}
 	]
 }
 
@@ -449,82 +631,52 @@ java.lang.ArrayIndexOutOfBoundsException: 26415
 		]
 	}
 ]] of Hibernate SessionFactory for HibernateTransactionManager
-[INFO ] 2018-07-17 15:40:03,985  4101 [org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:344)] method:Root WebApplicationContext: initialization completed in 4096 ms
-[INFO ] 2018-07-17 15:40:04,217  4333 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts-default.xml]
-[INFO ] 2018-07-17 15:40:04,322  4438 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts-plugin.xml]
-[INFO ] 2018-07-17 15:40:04,358  4474 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts.xml]
-[INFO ] 2018-07-17 15:40:04,365  4481 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
-[INFO ] 2018-07-17 15:40:04,370  4486 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
-[INFO ] 2018-07-17 15:40:04,375  4491 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
-[INFO ] 2018-07-17 15:40:04,382  4498 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
-[INFO ] 2018-07-17 15:40:04,383  4499 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
-[INFO ] 2018-07-17 15:40:04,383  4499 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
-[INFO ] 2018-07-17 15:40:04,383  4499 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
-[INFO ] 2018-07-17 15:40:04,383  4499 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
-[INFO ] 2018-07-17 15:40:04,383  4499 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
-[INFO ] 2018-07-17 15:40:04,384  4500 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
-[INFO ] 2018-07-17 15:40:04,384  4500 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
-[INFO ] 2018-07-17 15:40:04,385  4501 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
-[INFO ] 2018-07-17 15:40:04,388  4504 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
-[INFO ] 2018-07-17 15:40:04,389  4505 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
-[INFO ] 2018-07-17 15:40:04,389  4505 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
-[INFO ] 2018-07-17 15:40:04,389  4505 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
-[INFO ] 2018-07-17 15:40:04,389  4505 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
-[INFO ] 2018-07-17 15:40:04,390  4506 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
-[INFO ] 2018-07-17 15:40:04,391  4507 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
-[INFO ] 2018-07-17 15:40:04,391  4507 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
-[INFO ] 2018-07-17 15:40:04,391  4507 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
-[INFO ] 2018-07-17 15:40:04,391  4507 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
-[INFO ] 2018-07-17 15:40:04,392  4508 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
-[INFO ] 2018-07-17 15:40:04,392  4508 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
-[INFO ] 2018-07-17 15:40:04,393  4509 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
-[INFO ] 2018-07-17 15:40:04,394  4510 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
-[INFO ] 2018-07-17 15:40:04,394  4510 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
-[INFO ] 2018-07-17 15:40:04,395  4511 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
-[INFO ] 2018-07-17 15:40:04,395  4511 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
-[INFO ] 2018-07-17 15:40:04,395  4511 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
-[INFO ] 2018-07-17 15:40:04,395  4511 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
-[INFO ] 2018-07-17 15:40:04,396  4512 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
-[INFO ] 2018-07-17 15:40:04,396  4512 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.util.ContentTypeMatcher)
-[INFO ] 2018-07-17 15:40:04,396  4512 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
-[INFO ] 2018-07-17 15:40:04,397  4513 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
-[INFO ] 2018-07-17 15:40:04,397  4513 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
-[INFO ] 2018-07-17 15:40:04,397  4513 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
-[INFO ] 2018-07-17 15:40:04,399  4515 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
-[INFO ] 2018-07-17 15:40:04,399  4515 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
-[INFO ] 2018-07-17 15:40:04,399  4515 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
-[INFO ] 2018-07-17 15:40:04,414  4530 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Initializing Struts-Spring integration...
-[INFO ] 2018-07-17 15:40:04,419  4535 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Setting autowire strategy to name
-[INFO ] 2018-07-17 15:40:04,426  4542 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:... initialized Struts-Spring integration successfully
-[WARN ] 2018-07-17 15:40:04,801  4917 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.warn(CommonsLogger.java:60)] method:No default parameter defined for result [json] of type [org.apache.struts2.json.JSONResult] 
-[WARN ] 2018-07-17 15:40:04,809  4925 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.warn(CommonsLogger.java:60)] method:No default parameter defined for result [json] of type [org.apache.struts2.json.JSONResult] 
-[ERROR] 2018-07-17 15:40:04,870  4986 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.error(CommonsLogger.java:42)] method:Unable to read class [com.sttri.action.ServerAction]
-java.lang.ArrayIndexOutOfBoundsException: 26415
-	at org.objectweb.asm.ClassReader.readClass(Unknown Source)
-	at org.objectweb.asm.ClassReader.accept(Unknown Source)
-	at org.objectweb.asm.ClassReader.accept(Unknown Source)
-	at com.opensymphony.xwork2.util.finder.DefaultClassFinder.readClassDef(DefaultClassFinder.java:473)
-	at com.opensymphony.xwork2.util.finder.DefaultClassFinder.<init>(DefaultClassFinder.java:96)
-	at org.apache.struts2.convention.PackageBasedActionConfigBuilder.buildClassFinder(PackageBasedActionConfigBuilder.java:416)
-	at org.apache.struts2.convention.PackageBasedActionConfigBuilder.findActions(PackageBasedActionConfigBuilder.java:397)
-	at org.apache.struts2.convention.PackageBasedActionConfigBuilder.buildActionConfigs(PackageBasedActionConfigBuilder.java:354)
-	at org.apache.struts2.convention.ClasspathPackageProvider.loadPackages(ClasspathPackageProvider.java:53)
-	at com.opensymphony.xwork2.config.impl.DefaultConfiguration.reloadContainer(DefaultConfiguration.java:274)
-	at com.opensymphony.xwork2.config.ConfigurationManager.getConfiguration(ConfigurationManager.java:67)
-	at org.apache.struts2.dispatcher.Dispatcher.getContainer(Dispatcher.java:978)
-	at org.apache.struts2.dispatcher.Dispatcher.init_PreloadConfiguration(Dispatcher.java:446)
-	at org.apache.struts2.dispatcher.Dispatcher.init(Dispatcher.java:490)
-	at org.apache.struts2.dispatcher.ng.InitOperations.initDispatcher(InitOperations.java:74)
-	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.init(StrutsPrepareAndExecuteFilter.java:57)
-	at org.mortbay.jetty.servlet.FilterHolder.doStart(FilterHolder.java:97)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
-	at org.mortbay.jetty.servlet.ServletHandler.initialize(ServletHandler.java:713)
-	at org.mortbay.jetty.servlet.Context.startContext(Context.java:140)
-	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1282)
-	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:518)
-	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:499)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
-	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:130)
-	at org.mortbay.jetty.Server.doStart(Server.java:224)
-	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
-	at runjettyrun.Bootstrap.main(Bootstrap.java:97)
+[INFO ] 2018-07-18 16:31:27,242  3976 [org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:344)] method:Root WebApplicationContext: initialization completed in 3967 ms
+[INFO ] 2018-07-18 16:31:27,491  4225 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts-default.xml]
+[INFO ] 2018-07-18 16:31:27,606  4340 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts-plugin.xml]
+[INFO ] 2018-07-18 16:31:27,636  4370 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Parsing configuration file [struts.xml]
+[INFO ] 2018-07-18 16:31:27,643  4377 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+[INFO ] 2018-07-18 16:31:27,649  4383 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
+[INFO ] 2018-07-18 16:31:27,655  4389 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
+[INFO ] 2018-07-18 16:31:27,671  4405 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
+[INFO ] 2018-07-18 16:31:27,677  4411 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
+[INFO ] 2018-07-18 16:31:27,683  4417 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
+[INFO ] 2018-07-18 16:31:27,688  4422 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
+[INFO ] 2018-07-18 16:31:27,693  4427 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+[INFO ] 2018-07-18 16:31:27,699  4433 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+[INFO ] 2018-07-18 16:31:27,703  4437 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+[INFO ] 2018-07-18 16:31:27,709  4443 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+[INFO ] 2018-07-18 16:31:27,732  4466 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+[INFO ] 2018-07-18 16:31:27,737  4471 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+[INFO ] 2018-07-18 16:31:27,740  4474 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+[INFO ] 2018-07-18 16:31:27,741  4475 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+[INFO ] 2018-07-18 16:31:27,741  4475 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+[INFO ] 2018-07-18 16:31:27,741  4475 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+[INFO ] 2018-07-18 16:31:27,743  4477 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+[INFO ] 2018-07-18 16:31:27,746  4480 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+[INFO ] 2018-07-18 16:31:27,746  4480 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+[INFO ] 2018-07-18 16:31:27,746  4480 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+[INFO ] 2018-07-18 16:31:27,747  4481 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+[INFO ] 2018-07-18 16:31:27,747  4481 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+[INFO ] 2018-07-18 16:31:27,747  4481 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+[INFO ] 2018-07-18 16:31:27,748  4482 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+[INFO ] 2018-07-18 16:31:27,749  4483 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+[INFO ] 2018-07-18 16:31:27,749  4483 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+[INFO ] 2018-07-18 16:31:27,750  4484 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+[INFO ] 2018-07-18 16:31:27,750  4484 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+[INFO ] 2018-07-18 16:31:27,750  4484 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+[INFO ] 2018-07-18 16:31:27,750  4484 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+[INFO ] 2018-07-18 16:31:27,751  4485 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+[INFO ] 2018-07-18 16:31:27,752  4486 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.util.ContentTypeMatcher)
+[INFO ] 2018-07-18 16:31:27,752  4486 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+[INFO ] 2018-07-18 16:31:27,752  4486 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+[INFO ] 2018-07-18 16:31:27,752  4486 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+[INFO ] 2018-07-18 16:31:27,753  4487 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+[INFO ] 2018-07-18 16:31:27,753  4487 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
+[INFO ] 2018-07-18 16:31:27,754  4488 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
+[INFO ] 2018-07-18 16:31:27,754  4488 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
+[INFO ] 2018-07-18 16:31:27,769  4503 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Initializing Struts-Spring integration...
+[INFO ] 2018-07-18 16:31:27,788  4522 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:Setting autowire strategy to name
+[INFO ] 2018-07-18 16:31:27,791  4525 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:46)] method:... initialized Struts-Spring integration successfully
+[WARN ] 2018-07-18 16:31:28,163  4897 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.warn(CommonsLogger.java:60)] method:No default parameter defined for result [json] of type [org.apache.struts2.json.JSONResult] 
+[WARN ] 2018-07-18 16:31:28,170  4904 [com.opensymphony.xwork2.util.logging.commons.CommonsLogger.warn(CommonsLogger.java:60)] method:No default parameter defined for result [json] of type [org.apache.struts2.json.JSONResult] 

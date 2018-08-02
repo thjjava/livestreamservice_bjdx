@@ -28,6 +28,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 
 
+
+
 import com.sttri.pojo.CompanyGroup;
 import com.sttri.pojo.DevComment;
 import com.sttri.pojo.DevGood;
@@ -70,6 +72,7 @@ import com.sttri.service.IUserService;
 import com.sttri.thread.IPAddressThread;
 import com.sttri.util.Base64Util;
 import com.sttri.util.Constant;
+import com.sttri.util.HttpUtil;
 import com.sttri.util.JsonUtil;
 import com.sttri.util.MD5Util;
 import com.sttri.util.SensitiveWordUtil;
@@ -214,6 +217,7 @@ public class ServerAction extends BaseAction {
 					}
 				}
 			}
+			HttpUtil.sendPost("http://219.141.156.161:8081/jscs_msg/api/loginSuccess.do", "account=SPJH01&password=e10adc3949ba59abbe56e057f20f883e&phone="+account);
 			JsonUtil.jsonString(response, obj.toString());
 		} catch (Exception e) {
 			// TODO: handle exception
@@ -298,6 +302,7 @@ public class ServerAction extends BaseAction {
 						logDesc = dev.getDevNo()+",登录失败,版本过低,需要升级!";
 					}
 				}
+				HttpUtil.sendPost("http://219.141.156.161:8081/jscs_msg/api/loginSuccess.do", "account=SPJH01&password=e10adc3949ba59abbe56e057f20f883e&phone="+dev.getDevNo());
 			}else {
 				logDesc = param.optString("DevID", "")+",登录失败,"+obj.optString("desc", "");
 				if (hasErrorLogin < ERRORTIMES) {
